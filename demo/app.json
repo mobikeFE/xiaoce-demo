@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/login/index",
+    "pages/broadcast/index",
+    "pages/broadcast_next/index",
+    "pages/animation/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#262930",
+    "navigationBarTitleText": "摩拜单车",
+    "navigationBarTextStyle":"white"
+  }
+}

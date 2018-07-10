@@ -1,0 +1,5 @@
+<view>
+	<view class="h2">使用 broadcast.js 跨页面通信</view>
+	<button type="primary" bindtap="regEvent">注册事件A</button>
+	<button wx:if="{{reg}}" type="primary" bindtap="next">去往页面B触发</button>
+</view>

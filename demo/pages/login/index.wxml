@@ -1,0 +1,47 @@
+<view>
+	<view class="login">
+		<view class="login-title">{{loginTitle}}</view>
+		<form report-submit="true" bindsubmit="onLoginSubmitTap">
+			<view class="quick-login" wx:if="{{isQuickLogin}}">
+			  <label>
+			   	<button hidden open-type="getPhoneNumber" formType="submit" bindgetphonenumber="getPhoneNumber">手机号授权</button>
+				  <view class="ssoContainer">
+				    <view class="sso">{{quickLoginText}}</view>
+				  </view>
+			  </label>
+			  <view class="to-mbk-login" bindtap="goToMbkLogin">{{smsLoginText}}</view>
+			</view>
+			<view class="mbk-login"  wx:else>
+				<view class="login-info">
+					<view class="phone-area">
+						<label>
+							<text>手机号码</text>
+							<input cursor-spacing="{{cursorSpacing}}" maxlength="11" bindinput="isPhone" bindblur="isPhone" type="number" placeholder-style="color:#b2b2b2" placeholder="填写手机号"/>
+						</label>
+						<text wx:if="{{isActive == -1}}" class="get-code disabled">获取验证码</text>
+						<text wx:if="{{isActive == 1}}" class="get-code" bindtap="getCode">获取验证码</text>
+						<text wx:if="{{isActive == 2}}" class="get-code disabled">{{count}}秒</text>
+					</view>
+					<view class="code-area">
+						<label>
+							<text>验证码</text>
+							<input cursor-spacing="{{cursorSpacing}}" bindinput="isCodeNull" bindblur="isCodeNull" type="number" placeholder-style="color:#b2b2b2" placeholder="输入验证码"/>
+						</label>
+						<view class="widget-line"></view>
+					</view>
+					<view  class="code-area"><view class="widget-line widget-line-first"></view></view>
+				</view>
+				<view class="voice-code" id="voice" bindtap="getCode">
+					收不到短信，试试语音验证码
+				</view>
+				<view>
+					<button id="loginBtn" type="primary" formType="submit" bindtap="login" loading="{{loading}}" disabled="{{!isLogin}}">{{btnText}}</button>
+				</view>
+			</view>
+		</form>
+		<view class="protocol" wx:if="{{isProtocol}}">
+			点击登录，即表示已阅读并同意
+			<text bindtap="goToProtocal">《用车服务条款》</text>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,25 @@
+<view class="ranking-animate" >
+  <view class="contrl" class="{{music ? 'contrl' : 'contrl noMusic'}}">
+    <image wx:if="{{music}}" class="music" src="/images/music_off@3x.png" bindtap="stopMusic"></image>
+    <view class="{{ended ? 'skip end' : 'skip'}}" bindtap="skipToEnd">跳过</view>
+  </view>
+  <image class="back" src='/qcloud/gr_background.png' bindload="loaded"></image>
+  <image animation="{{aniBoy}}" class="boy" src="/qcloud/gr_boy.png" bindload="loaded"></image>
+  <image animation="{{aniFog}}" class="fog" src="/qcloud/gr_fog.png" bindload="loaded"></image>
+  <image animation="{{aniFogL}}" class="fogL" src="/qcloud/gr_fog.png"></image>
+  <image animation="{{aniHero}}" class="hero" src='/qcloud/gr_DC.png' bindload="loaded"></image>
+  <image animation="{{aniBike}}" class="bike" src='/qcloud/gr_Mobike.png' bindload="loaded"></image>
+  <image animation="{{aniBigHero}}" class="bigHero" src='/qcloud/gr_Mobikeman.png' bindload="loaded"></image>
+  <image animation="{{aniText}}" class="text" src='/qcloud/gr_mobikeman_text.png' bindload="loaded"></image>
+  <view  class="boyBikeWrap">
+    <image animation="{{aniBoyBike}}" class="boyBike" src='/qcloud/gr_back.png' bindload="loaded"></image>
+    <image animation="{{aniBoyHero}}" class="boyHero" src='/qcloud/gr_cloak.png' bindload="loaded"></image>
+  </view>
+  <view class="tips" animation="{{aniTips1}}" >
+    <view class="item" wx:for="{{tips[0]}}" wx:key>{{item}}</view>
+  </view>
+  <view class="tips" animation="{{aniTips2}}" >
+    <view class="item" wx:for="{{tips[1]}}" wx:key>{{item}}</view>
+  </view>
+  <image class="{{ended ? 'endedImg end' : 'endedImg'}}" src='/qcloud/gr_end.jpg' bindload="loaded"></image>
+</view>

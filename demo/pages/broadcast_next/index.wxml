@@ -1,0 +1,4 @@
+<view>
+	<view class="h2">使用 broadcast.js 跨页面通信</view>
+	<button type="primary" bindtap="fireEvent">触发事件A（注意看控制台）</button>
+</view>
