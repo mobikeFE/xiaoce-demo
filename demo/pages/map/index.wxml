@@ -1,0 +1,8 @@
+<view class="ranking-animate" >
+  <map id="map" show-location longitude="{{mapCenter.longitude}}" latitude="{{mapCenter.latitude}}" scale="{{scale}}" polyline="{{polyline}}" markers="{{markers || []}}" bindmarkertap="markertap" bindregionchange="regionchange" style="{{mapStyle}}">
+    <cover-view></cover-view>
+    <block wx:for="{{controls}}" wx:key>
+      <cover-image class="cover-controls" src="{{item.iconPath}}" style="{{item.style}}" data-idx="{{index}}" bindtap="onControlTap"></cover-image>
+    </block>
+  </map>
+</view>
