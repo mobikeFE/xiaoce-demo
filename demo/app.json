@@ -3,7 +3,8 @@
     "pages/login/index",
     "pages/broadcast/index",
     "pages/broadcast_next/index",
-    "pages/animation/index"
+    "pages/animation/index",
+    "pages/share/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

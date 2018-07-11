@@ -1,0 +1,7 @@
+page{
+  background: #EFEFF4;
+}
+
+.share {
+  margin-top: 80rpx;
+}

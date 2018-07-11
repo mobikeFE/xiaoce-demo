@@ -1,0 +1,7 @@
+<view>
+	<view class="share">
+		<form report-submit="true" bindsubmit="shareBtnTap">
+      <button class="send-btn" formType="submit" open-type="share">分享</button>
+    </form>
+	</view>
+</view>
