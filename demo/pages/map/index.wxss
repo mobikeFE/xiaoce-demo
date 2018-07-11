@@ -1,3 +1,41 @@
 .cover-controls {
 	position: absolute;
 }
+.tab-wrapper {
+  position: relative;
+  background: #FFF;
+  border: 1rpx solid #EAEAEA;
+  margin: 0 -1rpx;
+}
+.tab-wrapper .tabs {
+  display: -webkit-flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  flex-direction: row;
+  font-size: 28rpx;
+}
+.tab-wrapper .tab-item {
+  color: #353535;
+  text-align: center;
+  padding: 27rpx 0;
+}
+.tab-wrapper .tab-item.active {
+  color: #FF4611;
+}
+.tab-wrapper .tab-item.active .txt {
+  border-color: #FF4611;
+}
+.tab-wrapper .bar {
+  height: 6rpx;
+  width: 100rpx;
+  background: #FF4611;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.tab-wrapper.tab-size-2.tab-active-0 .bar {
+  -webkit-transform: translate3d(136rpx, 0, 0);
+}
+.tab-wrapper.tab-size-2.tab-active-1 .bar {
+  -webkit-transform: translate3d(512rpx, 0, 0);
+}

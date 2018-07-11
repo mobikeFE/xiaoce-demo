@@ -1,6 +1,14 @@
 <view class="ranking-animate" >
   <map id="map" show-location longitude="{{mapCenter.longitude}}" latitude="{{mapCenter.latitude}}" scale="{{scale}}" polyline="{{polyline}}" markers="{{markers || []}}" bindmarkertap="markertap" bindregionchange="regionchange" style="{{mapStyle}}">
-    <cover-view></cover-view>
+    <!-- 业务tab -->
+    <cover-view class="tab-wrapper tab-size-{{tabs.length}} tab-active-{{activeTab}}">
+      <cover-view class="tabs">
+        <cover-view style="width: {{itemWidth}}%" data-idx="{{index}}" wx:for="{{tabs}}" wx:key class="tab-item {{index == activeTab ? 'active' : ''}}" bindtap="onTabTap">
+          {{item}}
+        </cover-view>
+      </cover-view>
+      <cover-view class="bar"></cover-view>
+    </cover-view>
     <block wx:for="{{controls}}" wx:key>
       <cover-image class="cover-controls" src="{{item.iconPath}}" style="{{item.style}}" data-idx="{{index}}" bindtap="onControlTap"></cover-image>
     </block>
