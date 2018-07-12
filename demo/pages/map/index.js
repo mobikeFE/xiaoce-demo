@@ -13,7 +13,7 @@ Page({
     polyline: MAP_POLYLINE,
     mapCenter: MOCK_POSITION,
     mapStyle: 'width:750rpx;height:100vh;',
-    tabs: ['单车', '电单车'],
+    tabs: ['tab_1', 'tab_2'],
     itemWidth: 50,
     activeTab: 0
   },
