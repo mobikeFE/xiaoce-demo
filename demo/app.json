@@ -5,7 +5,8 @@
     "pages/broadcast_next/index",
     "pages/animation/index",
     "pages/share/index",
-    "pages/map/index"
+    "pages/map/index",
+    "pages/echarts/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

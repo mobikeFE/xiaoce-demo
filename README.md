@@ -10,3 +10,4 @@
 - 地图
 - 分享
 - 使用 `broadcast.js` 跨页面通信
+- 图表（echarts）
