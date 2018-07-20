@@ -10,22 +10,9 @@ function initChart(canvas, width, height) {
   canvas.setChart(chart);
 
   var option = {
-    color: ['#37a2da', '#32c5e9', '#67e0e3'],
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-        type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-      }
-    },
+    color: ['#f05b48', '#34b9c2', '#ffcc39'],
     legend: {
-      data: ['热度', '正面', '负面']
-    },
-    grid: {
-      left: 20,
-      right: 20,
-      bottom: 15,
-      top: 40,
-      containLabel: true
+      data: ['经典版', '轻骑版', '三文鱼']
     },
     xAxis: [
       {
@@ -44,7 +31,7 @@ function initChart(canvas, width, height) {
       {
         type: 'category',
         axisTick: { show: false },
-        data: ['北京', '上海', '南京', '杭州', '成都', '重庆', '深圳'],
+        data: ['北京', '上海', '南京'],
         axisLine: {
           lineStyle: {
             color: '#999'
@@ -57,53 +44,19 @@ function initChart(canvas, width, height) {
     ],
     series: [
       {
-        name: '热度',
+        name: '经典版',
         type: 'bar',
-        label: {
-          normal: {
-            show: true,
-            position: 'inside'
-          }
-        },
-        data: [300, 270, 340, 344, 300, 320, 310],
-        itemStyle: {
-          // emphasis: {
-          //   color: '#37a2da'
-          // }
-        }
+        data: [300, 270, 340]
       },
       {
-        name: '正面',
+        name: '轻骑版',
         type: 'bar',
-        stack: '总量',
-        label: {
-          normal: {
-            show: true
-          }
-        },
-        data: [120, 102, 141, 174, 190, 250, 220],
-        itemStyle: {
-          // emphasis: {
-          //   color: '#32c5e9'
-          // }
-        }
+        data: [120, 102, 141]
       },
       {
-        name: '负面',
+        name: '三文鱼',
         type: 'bar',
-        stack: '总量',
-        label: {
-          normal: {
-            show: true,
-            position: 'left'
-          }
-        },
-        data: [-20, -32, -21, -34, -90, -130, -110],
-        itemStyle: {
-          // emphasis: {
-          //   color: '#67e0e3'
-          // }
-        }
+        data: [200, 312, 231]
       }
     ]
   };
@@ -117,12 +70,5 @@ Page({
     ec: {
       onInit: initChart
     }
-  },
-
-  onReady() {
-    setTimeout(function () {
-      // 获取 chart 实例的方式
-      console.log(chart)
-    }, 2000);
   }
 });
