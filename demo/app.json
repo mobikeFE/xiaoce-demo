@@ -6,7 +6,8 @@
     "pages/animation/index",
     "pages/share/index",
     "pages/map/index",
-    "pages/echarts/index"
+    "pages/echarts/index",
+    "pages/canvas/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
