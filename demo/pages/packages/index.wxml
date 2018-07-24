@@ -1,0 +1,3 @@
+<view>
+  <button type="primary" bindtap="next">进入分包页面</button>
+</view>

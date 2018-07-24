@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/login/index",
     "pages/broadcast/index",
     "pages/broadcast_next/index",
@@ -7,12 +7,21 @@
     "pages/share/index",
     "pages/map/index",
     "pages/echarts/index",
-    "pages/canvas/index"
+    "pages/canvas/index",
+    "pages/packages/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#262930",
     "navigationBarTitleText": "摩拜单车",
-    "navigationBarTextStyle":"white"
-  }
+    "navigationBarTextStyle": "white"
+  },
+  "subPackages": [
+    {
+      "root": "subPackages/packageA",
+      "pages": [
+        "pages/dog/index"
+      ]
+    }
+  ]
 }
