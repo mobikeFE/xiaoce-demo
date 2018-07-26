@@ -12,3 +12,4 @@
 - 使用 `broadcast.js` 跨页面通信
 - canvas
 - 图表（echarts）
+- 分包加载（packages）
