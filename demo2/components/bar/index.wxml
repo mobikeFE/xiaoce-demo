@@ -1,0 +1,4 @@
+<view class="bar" style="background: {{backgroundColor || '#fff'}}">
+  <image src="/images/home.png"></image>
+  <text>{{title}}</text>
+</view>
