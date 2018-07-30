@@ -1,0 +1,21 @@
+.bar {
+  width: 750rpx;
+  height: 150rpx;
+  position: relative;
+}
+
+.bar image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 55rpx;
+  left: 60rpx;
+}
+
+.bar text {
+  display: inline-block;
+  width: 100%;
+  font-size: 34rpx;
+  line-height: 150rpx;
+  text-align: center;
+}

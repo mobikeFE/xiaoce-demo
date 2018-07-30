@@ -1,0 +1,6 @@
+.h2 {
+	font-size: 28rpx;
+	line-height: 40rpx;
+	margin: 20rpx;
+	color: #999;
+}

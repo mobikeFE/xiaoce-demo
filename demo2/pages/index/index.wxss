@@ -1,0 +1,154 @@
+page{
+  background: #EFEFF4;
+}
+.top {
+  display: inline-block;
+  height: 49rpx;
+  width: 750rpx;
+}
+.protocol {
+  text-align: center;
+  font-size: 26rpx;
+  color: #9B9B9B;
+  position: absolute;
+  bottom: 40rpx;
+  width: 100%;
+}
+.protocol text {
+  color: #576B95;
+}
+
+.intro-img image{
+  width: 750rpx;
+  margin: 0;
+}
+
+.login .login-info {
+  background: #ffffff;
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+  margin-top: -12rpx;
+}
+.login .widget-line {
+  content: " ";
+  position: absolute;
+  left: 40rpx;
+  top: 0;
+  right: 0;
+  height: 2rpx;
+  background-color: #E5E5E5;
+}
+.login .widget-line-first {
+  left: 0;
+  right: 0;
+  background-color: #E5E5E5;
+}
+.login .login-info view {
+  line-height: 88rpx;
+}
+.login .phone-area,
+.login .code-area {
+  position: relative;
+}
+.login .phone-area input {
+  width: 250rpx;
+}
+.login .code-area label {
+  width: 700rpx;
+}
+.login .code-area input {
+  width: 250rpx;
+}
+.login .login-info view text,
+.login .login-info view input {
+  display: inline-block;
+  vertical-align: middle;
+}
+.login .login-info label text {
+  margin: 0 0 0 33rpx;
+  width: 178rpx;
+}
+.login .get-code {
+  width: 190rpx;
+  padding: 0 33rpx;
+  font-size: 32rpx;
+  color: #1AAD19;
+  text-align: center;
+  float: right;
+  border-left: 2rpx solid #E5E5E5;
+  line-height: 90rpx;
+}
+.login .get-code.disabled {
+  color: #B2B2B2;
+}
+.login .voice-code {
+  color: #576B95;
+  font-size: 26rpx;
+  margin-left: 33rpx;
+}
+.login button {
+  margin: 36rpx 33rpx 0;
+}
+.login .protocol {
+  text-align: center;
+  font-size: 26rpx;
+  color: #9B9B9B;
+  margin-top: 20rpx;
+}
+.login .protocol text {
+  color: #576B95;
+}
+.login .intro-img image {
+  width: 750rpx;
+  height: 338rpx;
+  margin: 0;
+}
+.login .ssoContainer {
+  background: #1aad19;
+  width: 670rpx;
+  border-radius: 16rpx;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+.login .ssoContainer:active {
+  background-color: rgba(26, 173, 25, 0.7) !important;
+}
+.login .sso:before {
+  content: " ";
+  display: inline-block;
+  width: 54rpx;
+  height: 44rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  background-image: url('https://static.mobike.com/wx/wechat-0e658dfb96.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.login .sso {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+  box-sizing: border-box;
+  font-size: 36rpx;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 10rpx;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: white;
+}
+.login .to-mbk-login {
+  margin-top: 48rpx;
+  color: #576B95;
+  font-size: 32rpx;
+  text-align: center;
+}
+.login-title {
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
