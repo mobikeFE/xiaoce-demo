@@ -1,0 +1,70 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx80f809371ae33eda",
+	"projectname": "%E5%B0%8F%E5%86%8Cdemo",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "share",
+					"pathName": "pages/share/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "map",
+					"pathName": "pages/map/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "packages",
+					"pathName": "pages/packages/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "broadcast",
+					"pathName": "pages/broadcast/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "echarts",
+					"pathName": "pages/echarts/index"
+				}
+			]
+		}
+	}
+}

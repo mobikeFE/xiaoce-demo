@@ -8,7 +8,7 @@
   width: 40rpx;
   height: 40rpx;
   position: absolute;
-  top: 55rpx;
+  top: 65rpx;
   left: 60rpx;
 }
 
@@ -16,6 +16,7 @@
   display: inline-block;
   width: 100%;
   font-size: 34rpx;
-  line-height: 150rpx;
+  line-height: 135rpx;
+  padding-top: 15rpx;
   text-align: center;
 }
