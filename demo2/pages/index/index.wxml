@@ -3,6 +3,9 @@
 	<view class="login">
 		<view class="login-title">{{loginTitle}}</view>
 		<form report-submit="true" bindsubmit="onLoginSubmitTap">
+			<view>
+				<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bingGetUserInfo">获取用户信息</button>
+			</view>
 			<view class="quick-login" wx:if="{{isQuickLogin}}">
 			  <label>
 			   	<button hidden open-type="getPhoneNumber" formType="submit" bindgetphonenumber="getPhoneNumber">手机号授权</button>
@@ -35,6 +38,7 @@
 				<view class="voice-code" id="voice" bindtap="getCode">
 					收不到短信，试试语音验证码
 				</view>
+
 				<view>
 					<button id="loginBtn" type="primary" formType="submit" bindtap="login" loading="{{loading}}" disabled="{{!isLogin}}">{{btnText}}</button>
 				</view>

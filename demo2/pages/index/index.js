@@ -7,8 +7,30 @@ Page({
     isProtocol: false
   },
   onLoad (option) {
+    wx.checkSession({
+      success: function(){
+        console.log('checkSession success')
+        console.log(arguments)
+      },
+      fail: function(){
+        console.log('checkSession fail')
+        console.log(arguments)
+      }
+    })
   },
   onShow() {
+  },
+  bingGetUserInfo (){
+    console.log(arguments)
+  },
+  getCode () {
+    wx.login({
+      success: function(res) {
+        if (res.code) {
+          console.log(res.code)
+        }
+      }
+    })
   },
   goToMbkLogin: function goToMbkLogin(e) {
     this.setData({
